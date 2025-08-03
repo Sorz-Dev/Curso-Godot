@@ -1,0 +1,127 @@
+[gd_scene load_steps=11 format=3 uid="uid://b3q5comals1j8"]
+
+[ext_resource type="Script" uid="uid://bsmbe3t3lrebs" path="res://Scripts/hud.gd" id="1_t6m0e"]
+[ext_resource type="Texture2D" uid="uid://caih77bpbgmi3" path="res://Assets/barra_vazia.png" id="2_ivco3"]
+[ext_resource type="Texture2D" uid="uid://w7fkabt5oniq" path="res://Assets/barra_cheia.png" id="3_3d2sp"]
+[ext_resource type="Texture2D" uid="uid://diyagxy6xr52d" path="res://Assets/vida.png" id="4_btmju"]
+[ext_resource type="Texture2D" uid="uid://3eb5lqifb0wk" path="res://Assets/barra_cheia_2.png" id="5_yuivb"]
+[ext_resource type="Texture2D" uid="uid://daeldjus5wsjd" path="res://Assets/hud_pistola.png" id="7_mq1cu"]
+[ext_resource type="Texture2D" uid="uid://drrsxt4wb4nr4" path="res://Assets/hud_espingarda.png" id="8_72bk1"]
+[ext_resource type="Texture2D" uid="uid://ctmeefa7hd6at" path="res://Assets/hud_metralhadora.png" id="9_c8trj"]
+[ext_resource type="Texture2D" uid="uid://dai6e2fjskeh3" path="res://Assets/seta.png" id="10_c38kn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_873tj"]
+font_size = 28
+
+[node name="Hud" type="CanvasLayer"]
+script = ExtResource("1_t6m0e")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.03125
+anchor_top = 0.0407407
+anchor_right = 0.0729167
+anchor_bottom = 0.114815
+offset_top = 10.6667
+offset_right = -53.3334
+offset_bottom = -42.6668
+metadata/_edit_use_anchors_ = true
+
+[node name="Vida_Barra" type="TextureProgressBar" parent="Control"]
+texture_filter = 1
+layout_mode = 1
+offset_left = 68.0
+offset_top = 38.0
+offset_right = 336.0
+offset_bottom = 68.0
+texture_under = ExtResource("2_ivco3")
+texture_progress = ExtResource("3_3d2sp")
+
+[node name="Vida" type="Sprite2D" parent="Control"]
+texture_filter = 1
+position = Vector2(0, 20)
+texture = ExtResource("4_btmju")
+centered = false
+
+[node name="Vida_Texto" type="Label" parent="Control"]
+layout_mode = 1
+offset_left = 88.0
+offset_top = 32.0
+offset_right = 336.0
+offset_bottom = 71.0
+text = "0/40"
+label_settings = SubResource("LabelSettings_873tj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Muni_Barra" type="TextureProgressBar" parent="Control"]
+layout_mode = 1
+offset_left = 50.0
+offset_top = 127.0
+offset_right = 318.0
+offset_bottom = 157.0
+texture_under = ExtResource("2_ivco3")
+texture_progress = ExtResource("5_yuivb")
+
+[node name="Pistola" type="Sprite2D" parent="Control"]
+position = Vector2(0, 100)
+texture = ExtResource("7_mq1cu")
+centered = false
+
+[node name="Espingarda" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(0, 100)
+texture = ExtResource("8_72bk1")
+centered = false
+
+[node name="Metralhadora" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(0, 100)
+texture = ExtResource("9_c8trj")
+centered = false
+
+[node name="Muni_Texto" type="Label" parent="Control"]
+layout_mode = 1
+offset_left = 88.0
+offset_top = 122.0
+offset_right = 336.0
+offset_bottom = 161.0
+text = "0/8"
+label_settings = SubResource("LabelSettings_873tj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slimes_G_Vivos" type="Label" parent="Control"]
+layout_mode = 1
+offset_left = 40.0
+offset_top = 196.667
+offset_right = 280.0
+offset_bottom = 235.667
+text = "Grandes: 0 "
+label_settings = SubResource("LabelSettings_873tj")
+vertical_alignment = 1
+
+[node name="Slimes_P_Vivos" type="Label" parent="Control"]
+layout_mode = 1
+offset_left = 40.0
+offset_top = 261.667
+offset_right = 280.0
+offset_bottom = 300.667
+text = "Pequenos: 0"
+label_settings = SubResource("LabelSettings_873tj")
+vertical_alignment = 1
+
+[node name="Slimes_Mortos" type="Label" parent="Control"]
+layout_mode = 1
+offset_left = 40.0
+offset_top = 324.667
+offset_right = 280.0
+offset_bottom = 363.667
+text = "Mortos: 0"
+label_settings = SubResource("LabelSettings_873tj")
+vertical_alignment = 1
+
+[node name="Seta" type="Sprite2D" parent="."]
+position = Vector2(640, 40)
+rotation = 1.5708
+texture = ExtResource("10_c38kn")

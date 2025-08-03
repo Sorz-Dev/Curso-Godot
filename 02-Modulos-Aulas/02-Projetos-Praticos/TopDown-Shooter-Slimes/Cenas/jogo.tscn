@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://0ggeuh22q2xw"]
+
+[ext_resource type="Texture2D" uid="uid://getrp5rbimmc" path="res://Assets/fundo_cinza.png" id="1_3ope8"]
+[ext_resource type="Script" uid="uid://cmqbq8l82pyeh" path="res://Scripts/jogo.gd" id="1_5u1qn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m8rs1"]
+size = Vector2(10, 10)
+
+[node name="Jogo" type="Node2D"]
+script = ExtResource("1_5u1qn")
+
+[node name="Limite" type="Area2D" parent="."]
+collision_mask = 3
+
+[node name="Tamanho_Limite" type="CollisionShape2D" parent="Limite"]
+shape = SubResource("RectangleShape2D_m8rs1")
+
+[node name="Fundo" type="TextureRect" parent="."]
+z_index = -1
+offset_right = 4024.0
+offset_bottom = 3018.0
+texture = ExtResource("1_3ope8")
+stretch_mode = 1
+
+[node name="Projeteis" type="Node2D" parent="."]
+
+[node name="Coletaveis" type="Node2D" parent="."]
+
+[node name="Inimigos" type="Node2D" parent="."]
+
+[connection signal="body_shape_entered" from="Limite" to="." method="_on_limite_body_shape_entered"]

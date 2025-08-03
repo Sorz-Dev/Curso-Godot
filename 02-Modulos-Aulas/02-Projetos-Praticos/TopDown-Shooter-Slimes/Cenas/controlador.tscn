@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://bskq3wdtgj75h"]
+
+[ext_resource type="Script" uid="uid://iv8k7lp1ab0g" path="res://Scripts/controlador.gd" id="1_tfk72"]
+[ext_resource type="PackedScene" uid="uid://f8s0fabh8apc" path="res://Cenas/hud_pause.tscn" id="3_e4x86"]
+[ext_resource type="PackedScene" uid="uid://0ggeuh22q2xw" path="res://Cenas/jogo.tscn" id="4_qrmst"]
+[ext_resource type="PackedScene" uid="uid://b3q5comals1j8" path="res://Cenas/hud.tscn" id="4_ypt8v"]
+[ext_resource type="Script" uid="uid://pkbmlpp1km3r" path="res://Scripts/camera.gd" id="5_urvhl"]
+
+[node name="Controlador" type="Node2D"]
+script = ExtResource("1_tfk72")
+
+[node name="Hud_Pause" parent="." instance=ExtResource("3_e4x86")]
+
+[node name="Hud" parent="." instance=ExtResource("4_ypt8v")]
+
+[node name="Jogo" parent="." instance=ExtResource("4_qrmst")]
+
+[node name="Reiniciar" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="Camera" type="Camera2D" parent="."]
+z_index = 2
+position = Vector2(2005, 1581)
+limit_left = 0
+limit_top = 0
+script = ExtResource("5_urvhl")
+
+[connection signal="timeout" from="Reiniciar" to="." method="_on_reiniciar_timeout"]

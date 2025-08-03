@@ -1,0 +1,210 @@
+[gd_scene load_steps=47 format=3 uid="uid://dyg2qv7corg6e"]
+
+[ext_resource type="Texture2D" uid="uid://5ke41y1q28bl" path="res://Assets/zumbie/andando/skeleton-move_0.png" id="1_2b2yx"]
+[ext_resource type="Script" uid="uid://h2fhfnqo5eiq" path="res://Scripts/zumbie.gd" id="1_lqj5h"]
+[ext_resource type="Texture2D" uid="uid://psfiuawec37b" path="res://Assets/zumbie/andando/skeleton-move_1.png" id="2_f64yw"]
+[ext_resource type="Texture2D" uid="uid://b00mm05huwhlg" path="res://Assets/zumbie/andando/skeleton-move_2.png" id="3_3efhn"]
+[ext_resource type="Texture2D" uid="uid://c7peh8oiocc8k" path="res://Assets/zumbie/andando/skeleton-move_3.png" id="4_00vru"]
+[ext_resource type="Texture2D" uid="uid://d1ik8kgk4db0d" path="res://Assets/zumbie/andando/skeleton-move_4.png" id="5_67fwo"]
+[ext_resource type="Texture2D" uid="uid://dwkx4d01keh5h" path="res://Assets/zumbie/andando/skeleton-move_5.png" id="6_timl8"]
+[ext_resource type="Texture2D" uid="uid://cj8i5ub7ssv87" path="res://Assets/zumbie/andando/skeleton-move_6.png" id="7_ywbq0"]
+[ext_resource type="Texture2D" uid="uid://136cq10kkd81" path="res://Assets/zumbie/andando/skeleton-move_7.png" id="8_xyq4w"]
+[ext_resource type="Texture2D" uid="uid://cqs0pdbs01d1e" path="res://Assets/zumbie/andando/skeleton-move_8.png" id="9_n5grf"]
+[ext_resource type="Texture2D" uid="uid://cgvv3w7plwaah" path="res://Assets/zumbie/andando/skeleton-move_9.png" id="10_w6pjs"]
+[ext_resource type="Texture2D" uid="uid://cksi1o8i43uh3" path="res://Assets/zumbie/andando/skeleton-move_10.png" id="11_brwxp"]
+[ext_resource type="Texture2D" uid="uid://dytbqsbbpstfa" path="res://Assets/zumbie/andando/skeleton-move_11.png" id="12_fukv0"]
+[ext_resource type="Texture2D" uid="uid://df3xd6bej0xh2" path="res://Assets/zumbie/andando/skeleton-move_12.png" id="13_irjhy"]
+[ext_resource type="Texture2D" uid="uid://dse0r5lp2qhi7" path="res://Assets/zumbie/andando/skeleton-move_13.png" id="14_u14x2"]
+[ext_resource type="Texture2D" uid="uid://dxx87u17nobut" path="res://Assets/zumbie/andando/skeleton-move_14.png" id="15_vkjj3"]
+[ext_resource type="Texture2D" uid="uid://ipyd1v146uvj" path="res://Assets/zumbie/andando/skeleton-move_15.png" id="16_jr6ig"]
+[ext_resource type="Texture2D" uid="uid://vjhrf5jmpnah" path="res://Assets/zumbie/andando/skeleton-move_16.png" id="17_ld88q"]
+[ext_resource type="Texture2D" uid="uid://oeknxa15ajek" path="res://Assets/zumbie/ataque/skeleton-attack_0.png" id="18_ddb5w"]
+[ext_resource type="Texture2D" uid="uid://8e1guuxy8nyn" path="res://Assets/zumbie/ataque/skeleton-attack_1.png" id="19_bu1n3"]
+[ext_resource type="Texture2D" uid="uid://fqa68ami6jmg" path="res://Assets/zumbie/ataque/skeleton-attack_2.png" id="20_0kwh7"]
+[ext_resource type="Texture2D" uid="uid://cf4eaq1v4htsc" path="res://Assets/zumbie/ataque/skeleton-attack_3.png" id="21_utkm4"]
+[ext_resource type="Texture2D" uid="uid://bjmi1c2k2v62g" path="res://Assets/zumbie/ataque/skeleton-attack_4.png" id="22_d043e"]
+[ext_resource type="Texture2D" uid="uid://dyowghhwdbu3w" path="res://Assets/zumbie/ataque/skeleton-attack_5.png" id="23_2dv38"]
+[ext_resource type="Texture2D" uid="uid://dwtgfqycu5itq" path="res://Assets/zumbie/ataque/skeleton-attack_6.png" id="24_fbrof"]
+[ext_resource type="Texture2D" uid="uid://d0leb004wciq1" path="res://Assets/zumbie/ataque/skeleton-attack_7.png" id="25_cq3uo"]
+[ext_resource type="Texture2D" uid="uid://dm5opnsxwxuyw" path="res://Assets/zumbie/ataque/skeleton-attack_8.png" id="26_2fcym"]
+[ext_resource type="Texture2D" uid="uid://cdcw18hn7wjny" path="res://Assets/zumbie/parado/skeleton-idle_0.png" id="27_8lj3o"]
+[ext_resource type="Texture2D" uid="uid://betmtwo1p56tj" path="res://Assets/zumbie/parado/skeleton-idle_1.png" id="28_jhapp"]
+[ext_resource type="Texture2D" uid="uid://dm444rn7jmiwi" path="res://Assets/zumbie/parado/skeleton-idle_2.png" id="29_fvvvx"]
+[ext_resource type="Texture2D" uid="uid://cq3wnhk6hvi8k" path="res://Assets/zumbie/parado/skeleton-idle_3.png" id="30_3qw8e"]
+[ext_resource type="Texture2D" uid="uid://bs0tebl632qeq" path="res://Assets/zumbie/parado/skeleton-idle_4.png" id="31_b8nas"]
+[ext_resource type="Texture2D" uid="uid://cidplsb1yxqgp" path="res://Assets/zumbie/parado/skeleton-idle_5.png" id="32_6wcmm"]
+[ext_resource type="Texture2D" uid="uid://csnc6wgcqk22o" path="res://Assets/zumbie/parado/skeleton-idle_6.png" id="33_3poo6"]
+[ext_resource type="Texture2D" uid="uid://bj7jkksty564r" path="res://Assets/zumbie/parado/skeleton-idle_7.png" id="34_lgt8y"]
+[ext_resource type="Texture2D" uid="uid://bd1qp0f6tiv0l" path="res://Assets/zumbie/parado/skeleton-idle_8.png" id="35_ancx0"]
+[ext_resource type="Texture2D" uid="uid://cx57q5mipi48o" path="res://Assets/zumbie/parado/skeleton-idle_9.png" id="36_dwnuf"]
+[ext_resource type="Texture2D" uid="uid://h26817y0261v" path="res://Assets/zumbie/parado/skeleton-idle_10.png" id="37_pupv2"]
+[ext_resource type="Texture2D" uid="uid://cesbmwshlx0qx" path="res://Assets/zumbie/parado/skeleton-idle_11.png" id="38_058bn"]
+[ext_resource type="Texture2D" uid="uid://dkqohcwbu5kr6" path="res://Assets/zumbie/parado/skeleton-idle_12.png" id="39_jjl0u"]
+[ext_resource type="Texture2D" uid="uid://baw2jybjarrdk" path="res://Assets/zumbie/parado/skeleton-idle_13.png" id="40_3k21s"]
+[ext_resource type="Texture2D" uid="uid://dlamng7b4w2f2" path="res://Assets/zumbie/parado/skeleton-idle_14.png" id="41_y3f7k"]
+[ext_resource type="Texture2D" uid="uid://bxi5c14sd4wtl" path="res://Assets/zumbie/parado/skeleton-idle_15.png" id="42_6hp73"]
+[ext_resource type="Texture2D" uid="uid://b6vg0xt3cwpsr" path="res://Assets/zumbie/parado/skeleton-idle_16.png" id="43_wcpqp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_naxq2"]
+radius = 63.3333
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_88pud"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2b2yx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_f64yw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3efhn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_00vru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_67fwo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_timl8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ywbq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xyq4w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_n5grf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_w6pjs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_brwxp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_fukv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_irjhy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_u14x2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_vkjj3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_jr6ig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ld88q")
+}],
+"loop": true,
+"name": &"andando",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_ddb5w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_bu1n3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_0kwh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_utkm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_d043e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_2dv38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_fbrof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_cq3uo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_2fcym")
+}],
+"loop": true,
+"name": &"atacando",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_8lj3o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_jhapp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_fvvvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_3qw8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_b8nas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_6wcmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_3poo6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_lgt8y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ancx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_dwnuf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_pupv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_058bn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_jjl0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_3k21s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_y3f7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_6hp73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_wcpqp")
+}],
+"loop": true,
+"name": &"parado",
+"speed": 20.0
+}]
+
+[node name="Zumbie" type="CharacterBody2D" groups=["Inimigos"]]
+scale = Vector2(0.3, 0.3)
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("1_lqj5h")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_naxq2")
+
+[node name="Animated" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_88pud")
+animation = &"andando"
+offset = Vector2(28, -8)

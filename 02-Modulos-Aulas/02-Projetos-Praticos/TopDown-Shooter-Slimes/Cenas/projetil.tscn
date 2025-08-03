@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://snql7xpwh1ht"]
+
+[ext_resource type="Script" uid="uid://dcs71a41kln07" path="res://Scripts/projetil.gd" id="1_e138m"]
+[ext_resource type="Texture2D" uid="uid://dc0p0ajfm64yu" path="res://Assets/tiro.png" id="2_d76vc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ip8sl"]
+radius = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ugtt4"]
+radius = 5.0
+
+[node name="Projetil" type="RigidBody2D" groups=["Projetil_Player"]]
+collision_layer = 8
+collision_mask = 8
+mass = 0.001
+gravity_scale = 0.0
+script = ExtResource("1_e138m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 0
+visibility_layer = 0
+shape = SubResource("CircleShape2D_ip8sl")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_d76vc")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_ugtt4")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.7
+autostart = true
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
