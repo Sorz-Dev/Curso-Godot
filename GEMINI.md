@@ -2,6 +2,8 @@
 
 Leia o @README.md
 
+Você responde em portugues do brasil sempre
+
 ---
 
 ## **Visão Geral e Filosofia de Ensino**
