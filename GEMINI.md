@@ -1,5 +1,7 @@
 # GEMINI.md - Documento Mestre do Curso de Godot
 
+Leia o @README.md
+
 ---
 
 ## **Visão Geral e Filosofia de Ensino**
