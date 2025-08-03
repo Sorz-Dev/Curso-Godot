@@ -1,0 +1,17 @@
+# Godot-specific ignores
+.godot/
+*.import
+*.translation
+export_presets.cfg
+
+# Environment variables
+.env
+
+# Build and temporary files
+build/
+bin/
+temp/
+
+# OS generated files
+.DS_Store
+Thumbs.db
