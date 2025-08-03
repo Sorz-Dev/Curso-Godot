@@ -1,0 +1,23 @@
+Lista de Documentos usados no desenvolvimento de jogos:
+ADR
+Art_Style_Guide
+Audio_Design_Document
+Briefing
+Concept_Art
+Cutscene_Document
+Documento_UI_UX
+GDD
+Guia_de_Roteiro_e_Personagens
+LDD
+Live_Ops_Plan
+Localization_Plan
+Mechanics_Design_Document
+Monetization_Design_Document
+Orcamento
+Pitch
+Plano_de_Marketing_e_PR
+Plano_de_Projeto_e_Cronograma
+Plano_de_Testes_QA
+Processo_de_Desenvolvimento
+TDD
+Tecnologias_e_Dependencias
