@@ -6,6 +6,7 @@ export_presets.cfg
 
 # Environment variables
 .env
+tree.ps1
 
 # Build and temporary files
 build/
