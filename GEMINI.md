@@ -1,77 +1,4 @@
-# GEMINI.md - Documento Mestre do Curso de Godot
-
-Leia o @README.md
-
-Você responde em portugues do brasil sempre
-
----
-
-## **Visão Geral e Filosofia de Ensino**
-
-Este documento é o manual central e a documentação viva para o curso **"Godot 2D - Do Zero ao Jogo Completo"**. Ele consolida a filosofia de ensino, a estrutura dos módulos e as arquiteturas detalhadas de todos os sistemas que serão construídos.
-
-### **Filosofia Didática Oficial da Formação**
-
-A abordagem do curso é guiada por um princípio fundamental: **ensinar a tecnologia como ela é hoje, com foco na prática e na mentalidade profissional desde o início.**
-
--   **Abordagem Moderna:** Ensinamos as ferramentas e recursos atuais como o padrão natural da tecnologia, sem nos prendermos a como "as coisas eram antes". Se uma ferramenta tem IA, a IA faz parte do seu uso padrão. Se o GDScript tem features modernas, elas são o ponto de partida.
--   **Foco no Iniciante:** A jornada é desenhada para quem está começando. Evitamos ruído e distrações históricas para focar no que é necessário para construir o futuro.
--   **Prática Aplicada:** O aprendizado é contextualizado. Ensinamos a ferramenta no seu estado atual, mostrando como usá-la na prática, dentro de projetos reais e funcionais.
--   **Mentalidade Profissional:** O aluno aprende como as coisas funcionam no mercado *hoje*, acelerando sua curva de aprendizado e preparando-o para desafios reais.
-
-**Benefícios:**
--   Curso mais limpo, objetivo e rápido.
--   Conteúdo que permanece relevante por mais tempo.
--   Formação de profissionais preparados para o mercado atual.
-
----
-
-## **Estrutura e Roadmap do Curso**
-
-A jornada é dividida em módulos, onde cada módulo (a partir do 2) resulta em um jogo completo e funcional, introduzindo conceitos de forma incremental.
-
-### **Módulo 0: Bem-vindo à Godot Engine**
--   **Objetivo:** Familiarizar o aluno com o ambiente, a filosofia e a interface da Godot, sem a necessidade de programação.
--   **Aulas:**
-    -   **0.1 - Apresentação do Curso e do Instrutor:** Boas-vindas, apresentação da estrutura de módulos e dos projetos que serão desenvolvidos.
-    -   **0.2 - A Filosofia Godot:** Explicação dos conceitos centrais:
-        -   **Nós (Nodes):** Blocos de construção focados.
-        -   **Cenas (Scenes):** Conjuntos de nós para criar objetos complexos (personagens, itens, níveis).
-        -   **Árvore de Cenas (Scene Tree):** A estrutura hierárquica de pai e filho.
-        -   **Sinais (Signals):** O sistema de comunicação desacoplado.
-    -   **0.3 - Instalando o Godot e Configurando o Ambiente:** Guia para baixar a versão correta, instalar os templates de exportação e fazer configurações iniciais no editor para maior produtividade.
-    -   **0.4 - Tour Completo pela Interface do Godot 4.x:** Exploração detalhada das quatro regiões principais do editor: Viewport (centro), Painel de Cenas e Arquivos (esquerda), Inspector e Nós (direita), e o painel inferior (Saída, Debugger, Animação).
-
-### **Módulo 1: A Caixa de Ferramentas Godot**
--   **Objetivo:** Apresentar os nós e conceitos fundamentais que são os blocos de construção de qualquer jogo 2D.
--   **Aulas:**
-    -   **1.1 - Nós 2D Essenciais:**
-        -   `Node2D`: O pino de referência para posição, rotação e escala.
-        -   `Sprite2D`: Para exibir imagens estáticas.
-        -   `AnimatedSprite2D`: Para animações frame a frame.
-    -   **1.2 - Corpos e Colisões:**
-        -   `CharacterBody2D`: Para controle preciso de personagens (jogador, NPCs).
-        -   `StaticBody2D`: Para objetos de cenário imóveis (chão, paredes).
-        -   `RigidBody2D`: Para objetos controlados pela física (caixas, pedras).
-        -   `Area2D`: Para detecção e gatilhos (moedas, zonas de dano, hitboxes).
-    -   **1.3 - Nós de UI (Interface do Usuário):**
-        -   `Control`: O nó base para toda a UI.
-        -   `Label`: Para exibir texto.
-        -   `Button`: Para interação do usuário.
-        -   `TextureRect`: Para exibir imagens na UI.
-        -   `Containers` (`VBoxContainer`, `HBoxContainer`, etc.): Para organização responsiva da UI.
-    -   **1.4 - Nós Auxiliares:**
-        -   `Timer`: Para ações baseadas em tempo (cooldowns, spawn de inimigos).
-        -   `Camera2D`: Para seguir o jogador e controlar a visão do jogo.
-        -   `CanvasLayer`: Para garantir que a UI fique fixa na tela, independente da câmera.
-    -   **1.5 - O Quinto Pilar: Recursos e Dados:**
-        -   `Resource`: O que são e por que são a base da arquitetura de dados.
-        -   Criando um script que herda de `Resource`.
-        -   Criando e editando arquivos `.tres` no Inspector.
-        -   Usando um `.tres` para alimentar os dados de um nó.
-
-### **Módulos 2-5: Projetos Práticos (Exemplos de Estrutura)**
--   **Jogo 1 - "Pong Moderno":** Foco em input, colisões, UI simples e **uso de `Resources` para stats**.
+<!-- Import failed: ENOENT: no such file or directory, open 'C:\Users\bruno\Desktop\VS-Gemini\Godot\Curso\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..\..-   **Jogo 1 - "Pong Moderno":** Foco em input, colisões, UI simples e **uso de `Resources` para stats**.
 -   **Jogo 2 - "Clicker de Moedas":** Foco em UI, Timers e Save/Load.
 -   **Jogo 3 - "Nave Espacial (Top-Down Shooter)":** Foco em instanciar cenas, `Area2D` e movimento.
 -   **Jogo 4 - "Plataforma 2D Simples":** Foco em física de plataforma, `TileMap` e `AnimatedSprite2D`.
@@ -100,7 +27,13 @@ A jornada é dividida em módulos, onde cada módulo (a partir do 2) resulta em 
     -   **7.11 - Sistema de Localização (Idiomas):** Usar o sistema de tradução do Godot com arquivos CSV.
     -   **7.12 - Sistema de Diálogos (usando Dialogue Manager):** Implementar um fluxo de diálogo completo com o plugin.
 
----
+### **Módulo 8: Tópicos Avançados (Teoria e Prática)**
+-   **Objetivo:** Aprofundar em conceitos técnicos e de design que separam jogos amadores de produtos profissionais e polidos.
+-   **Aulas:** 
+    -   **8.1 - Otimização e Performance:** Estudo de profiling, identificação de gargalos (CPU/GPU) e melhores práticas para um jogo performático.
+    -   **8.2 - Game Feel e "Juice":** Implementação de técnicas como screenshake, hit-stop, coyote time e jump buffering para criar uma experiência responsiva.
+
+--- 
 
 ## **Arquitetura e Manuais de Sistemas**
 
