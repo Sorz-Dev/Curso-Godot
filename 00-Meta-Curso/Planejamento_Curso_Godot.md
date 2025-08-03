@@ -59,8 +59,8 @@ A jornada será dividida em módulos, onde cada módulo (a partir do 2) resulta 
 ---
 
 ### **Módulo 2: Jogo 1 - "Pong Moderno"**
-*   **Objetivo:** Primeiro jogo completo. Foco em input, colisões e UI simples.
-*   **Conceitos:** `CharacterBody2D`, Sinais, Detecção de Colisão, Labels para UI.
+*   **Objetivo:** Primeiro jogo completo. Foco em input, colisões, UI simples e introdução prática à arquitetura de dados.
+*   **Conceitos:** `CharacterBody2D`, Sinais, Detecção de Colisão, Labels para UI, **criação e uso de `Resources` para os stats da bola e das paletas**.
 *   **Projeto:** Jogo de Pong funcional para dois jogadores locais.
 
 ---

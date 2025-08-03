@@ -12,6 +12,7 @@
 
 ## 3. Foco de Aprendizado
 
+*   **Arquitetura de Dados com `Resources`**: A base de todo o projeto. Personagens, inimigos, itens, quests, habilidades e equipamentos serão todos definidos como `Resources`.
 *   **Integração Total:** Este projeto unirá **todos** os sistemas e manuais desenvolvidos ao longo do curso.
 *   Sistema de Quests complexo com múltiplos objetivos.
 *   Sistema de Diálogo com ramificações e impacto no estado do mundo.

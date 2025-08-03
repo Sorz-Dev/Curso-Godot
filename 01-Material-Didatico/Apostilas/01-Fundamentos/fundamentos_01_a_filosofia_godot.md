@@ -59,8 +59,10 @@ Existem quatro conceitos que, uma vez compreendidos, farão todo o resto do seu 
 
 ---
 
-## 6. Bônus: Recursos (Resources)
+## 6. O Quinto Pilar: Recursos (Resources)
 
--   **O que são?** São objetos que contêm apenas **dados**. Pense neles como arquivos de configuração ou planilhas. Eles não fazem nada sozinhos, apenas guardam informações.
--   **Exemplos:** Um `Texture` é um recurso que guarda os dados de uma imagem. Um `AudioStream` é um recurso que guarda os dados de um som. Um `SpriteFrames` é um recurso que guarda os dados de uma animação.
--   **O Poder:** Você pode criar seus próprios Recursos customizados para guardar os stats de um personagem, os dados de um item, ou o conteúdo de um diálogo. Esta é a base da arquitetura orientada a dados que veremos na apostila de nível intermediário.
+-   **O que são?** Além de Nós, Cenas, Árvores e Sinais, há um quinto conceito crucial: **Recursos**. Um Recurso é um objeto que contém apenas **DADOS**. Eles não fazem nada sozinhos, apenas guardam informações.
+-   **Exemplos que você já usa:** Uma `Texture` (imagem), um `AudioStream` (som), ou um `SpriteFrames` (animação) são todos Recursos.
+-   **O Poder:** A verdadeira mágica acontece quando você cria seus **próprios Recursos**. Você pode definir um "molde" para os stats de um personagem, os dados de um item, ou o conteúdo de um diálogo.
+-   **Por que é fundamental?** Esta abordagem, chamada de **Arquitetura Orientada a Dados**, permite separar a lógica (o que um objeto *faz*) dos seus dados (o que um objeto *é*). Isso torna seu projeto incrivelmente flexível e fácil de gerenciar.
+-   **Próximo Passo:** Na próxima apostila, vamos mergulhar fundo em como criar e usar seus próprios Recursos, uma técnica que usaremos desde o nosso primeiro projeto.

@@ -52,35 +52,36 @@ Este documento é um compêndio de arquiteturas e conceitos para diversos sistem
   - Possui (ou seu `owner` possui) a função `take_damage(attack_data)`.
 - **O Evento de Dano:** A `Hitbox` detecta uma `Hurtbox` (via `area_entered`) e chama a função `take_damage` na vítima.
 
-### 1.2. O Pacote de Dados do Ataque (`AttackData`)
-Passe sempre um dicionário com os dados do ataque para máxima flexibilidade. O dano real pode ser calculado usando os `stats` do atacante.
-- **Exemplo:**
+### 1.2. O Recurso de Dados do Ataque (`AttackData.tres`)
+Em vez de passar um dicionário genérico, criamos um `Resource` para definir nosso ataque. Isso nos dá tipagem e autocompletar no código, além de permitir criar e balancear ataques no Inspector.
+
+- **Criação:** Crie um script `AttackData.gd` que herda de `Resource`.
   ```gdscript
-  # No atacante, antes de chamar take_damage
-  var attack_data = {
-      "base_damage": stats.base_damage, # Dano base vindo dos stats
-      "damage_multiplier": 1.5, # Para um golpe forte, por exemplo
-      "knockback_force": 200.0,
-      "source": self, # Referência ao nó do atacante
-      "damage_type": "physical",
-  }
+  class_name AttackData
+  extends Resource
+
+  @export var base_damage: int = 10
+  @export var knockback_force: float = 150.0
+  @export var source: Node # Referência a quem atacou
+  @export var damage_type: String = "physical"
   ```
+- **Uso:** Crie arquivos `.tres` a partir deste recurso (ex: `ataque_espada.tres`, `bola_de_fogo.tres`). A `Hitbox` de um ataque terá uma variável `@export var attack_data: AttackData`, onde você arrastará o arquivo `.tres` correspondente.
 
 ### 1.3. A Função `take_damage`
-A função no script do personagem que recebe o `AttackData` e aplica seus efeitos, considerando os `stats` do defensor.
+A função no script do personagem que recebe o `AttackData` e aplica seus efeitos.
 ```gdscript
 # No defensor (jogador, inimigo)
-func take_damage(attack_data: Dictionary):
+func take_damage(attack: AttackData):
+    if not attack: return
+
     # Calcula o dano final considerando a defesa
-    var incoming_damage = attack_data.get("base_damage", 0) * attack_data.get("damage_multiplier", 1.0)
-    var final_damage = max(1, incoming_damage - stats.defense) # Garante pelo menos 1 de dano
+    var final_damage = max(1, attack.base_damage - stats.defense)
 
     current_health -= final_damage
     
-    var knockback_source = attack_data.get("source")
-    if knockback_source:
-        var direction = (global_position - knockback_source.global_position).normalized()
-        velocity = direction * attack_data.get("knockback_force", 0)
+    if attack.source:
+        var direction = (global_position - attack.source.global_position).normalized()
+        velocity = direction * attack.knockback_force
     
     state_machine.transition_to("Hurt")
     if current_health <= 0: die()

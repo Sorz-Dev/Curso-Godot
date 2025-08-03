@@ -64,9 +64,14 @@ A jornada é dividida em módulos, onde cada módulo (a partir do 2) resulta em 
         -   `Timer`: Para ações baseadas em tempo (cooldowns, spawn de inimigos).
         -   `Camera2D`: Para seguir o jogador e controlar a visão do jogo.
         -   `CanvasLayer`: Para garantir que a UI fique fixa na tela, independente da câmera.
+    -   **1.5 - O Quinto Pilar: Recursos e Dados:**
+        -   `Resource`: O que são e por que são a base da arquitetura de dados.
+        -   Criando um script que herda de `Resource`.
+        -   Criando e editando arquivos `.tres` no Inspector.
+        -   Usando um `.tres` para alimentar os dados de um nó.
 
 ### **Módulos 2-5: Projetos Práticos (Exemplos de Estrutura)**
--   **Jogo 1 - "Pong Moderno":** Foco em input, colisões e UI simples.
+-   **Jogo 1 - "Pong Moderno":** Foco em input, colisões, UI simples e **uso de `Resources` para stats**.
 -   **Jogo 2 - "Clicker de Moedas":** Foco em UI, Timers e Save/Load.
 -   **Jogo 3 - "Nave Espacial (Top-Down Shooter)":** Foco em instanciar cenas, `Area2D` e movimento.
 -   **Jogo 4 - "Plataforma 2D Simples":** Foco em física de plataforma, `TileMap` e `AnimatedSprite2D`.

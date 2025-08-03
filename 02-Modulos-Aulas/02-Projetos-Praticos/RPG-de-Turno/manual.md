@@ -12,7 +12,7 @@
 
 ## 3. Foco de Aprendizado
 
+*   **Arquitetura de Dados com `Resources`**: Este é o foco principal. Usaremos `.tres` para definir tudo: personagens, suas classes, habilidades, inimigos, itens e equipamentos.
 *   Criação de sistemas de UI complexos e interconectados.
-*   Arquitetura de dados para habilidades, itens e stats de personagens.
 *   IA de inimigo baseada em turnos (escolher o ataque mais eficaz, focar em alvos com pouca vida).
 *   Gerenciamento de estado do jogo (de exploração para batalha e de volta).

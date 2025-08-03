@@ -48,7 +48,7 @@ O projeto segue uma estrutura organizada para separar cenas, scripts, assets e o
 ### Arquitetura de Dados com `Resources`
 A base do projeto é uma arquitetura orientada a dados. Em vez de definir stats como vida e dano diretamente nos scripts, usamos `Resources` (`.tres` arquivos) para desacoplar os dados da lógica.
 
--   **`CharacterStats.gd`**: Um recurso base para qualquer entidade que tenha stats (jogador, inimigos). Contém `max_health`, `move_speed`, `base_damage`, `defense`, etc.
+-   **`CharacterStats.gd`**: Um recurso base para qualquer entidade que tenha stats (jogador, inimigos). Contém `max_health`, `move_speed`, `jump_force`, `base_damage`, `defense`, etc.
 -   **`EnemyData.gd`**: Herda de `CharacterStats` e adiciona informações específicas de inimigos, como a cena a ser instanciada, tipo de IA, tabela de loot e XP concedido.
 
 ### Sistemas Globais (Autoloads)

@@ -19,3 +19,4 @@
 *   Uso de `Area2D` para hitboxes e hurtboxes.
 *   Efeitos de partículas para explosões e rastros.
 *   IA simples para inimigos.
+*   **Arquitetura de Dados:** Usaremos `Resources` (`.tres` arquivos) para definir os stats da nave (vida, velocidade, tipo de tiro) e dos diferentes tipos de inimigos.

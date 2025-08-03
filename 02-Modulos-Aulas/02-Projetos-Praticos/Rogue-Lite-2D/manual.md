@@ -12,6 +12,7 @@
 
 ## 3. Foco de Aprendizado
 
+*   **Arquitetura de Dados com `Resources`**: Usaremos `.tres` para definir todos os itens, power-ups e inimigos, facilitando a criação de sinergias e o balanceamento.
 *   Algoritmos de geração procedural de masmorras (ex: Cellular Automata, Drunkard's Walk).
 *   Sistema de itens e equipamentos com foco em sinergias.
 *   Arquitetura de Save/Load para a meta-progressão.

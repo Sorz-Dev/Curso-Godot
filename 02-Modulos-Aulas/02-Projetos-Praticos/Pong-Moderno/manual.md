@@ -13,4 +13,5 @@
     *   Nós de física (`CharacterBody2D` para as paletas, `RigidBody2D` para a bola).
     *   Detecção de colisão.
     *   UI simples para o placar (`Label`).
-    *   Sinais para comunicação (bola pontuou -> placar atualiza).
+*   Sinais para comunicação (bola pontuou -> placar atualiza).
+*   **Arquitetura de Dados com `Resources`**: Usaremos arquivos `.tres` para definir os stats da bola (velocidade) e das paletas (velocidade), introduzindo este conceito fundamental de forma prática.

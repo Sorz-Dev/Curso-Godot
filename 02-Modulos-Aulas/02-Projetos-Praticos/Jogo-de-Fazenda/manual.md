@@ -12,8 +12,10 @@
 
 ## 3. Foco de Aprendizado
 
+*   **Arquitetura de Dados com `Resources`**: Usaremos arquivos `.tres` para definir os dados de cada tipo de plantação (tempo de crescimento, preço de venda), ferramentas e animais.
 *   Uso avançado de `TileMap` com múltiplas camadas (terra arada, plantações).
 *   Sistema de inventário para ferramentas e itens.
 *   Ciclo de dia/noite e passagem de estações.
 *   Sistema de interação com objetos (plantar sementes, usar ferramentas).
 *   Sistema de diálogo com NPCs.
+*   **Arquitetura de Dados com `Resources`**: Usaremos `.tres` para tudo: sementes, dados de crescimento de plantas, ferramentas, animais, etc. Isso tornará o jogo extremamente modular.

@@ -12,7 +12,12 @@
 
 ## 3. Foco de Aprendizado
 
-*   Nós de UI avançados (`Button`, `TextureProgressBar`, `Containers`).
-*   Uso de `Timer` para geração passiva de recursos.
-*   Sistema de Save/Load com arquivos JSON.
-*   Formatação de números grandes (ex: 1.000 -> 1k, 1.000.000 -> 1M).
+## 3. Foco de Aprendizado
+
+*   **Arquitetura de Dados com `Resources`**: Usaremos arquivos `.tres` para definir os stats da bola (velocidade) e das paletas (velocidade), introduzindo este conceito fundamental de forma prática.
+*   **Sistema de Save/Load com JSON**: Implementaremos um sistema de salvamento e carregamento de dados do jogo usando arquivos JSON.
+*   **UI Avançada**: Criaremos uma interface de usuário mais complexa, com botões, labels e barras de progresso.
+*   **Animação**: Usaremos o `AnimationPlayer` para criar animações mais complexas e polidas.
+*   **Efeitos Visuais**: Criaremos efeitos visuais para o jogo, como partículas e shaders.
+*   **Controle de Versão**: Usaremos o Git e o GitHub para controlar as versões do nosso projeto.
+*   **Arquitetura de Dados com `Resources`**: Cada upgrade será um arquivo `.tres` contendo seu custo inicial, custo de crescimento, moedas por segundo e textura, permitindo adicionar novos upgrades sem alterar o código.
